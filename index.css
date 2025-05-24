@@ -1,0 +1,240 @@
+/* homepage */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #020024, #090979, #000000);
+  color: #fff;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background: transparent;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: gold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.botao {
+  background: linear-gradient(to right, #1e90ff, #00bfff);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  align-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 250px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s;
+  margin-top: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para os ícones */
+.card i {
+  font-size: 48px;
+  color: #00bfff;
+  margin-bottom: 1rem;
+}
+
+/* explorar */
+.botao-pequeno {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #1e90ff;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.botao-pequeno:hover {
+  background-color: #00bfff;
+}
+
+/* cursos */
+.cards-cursos {
+  gap: 2.5rem;
+  padding: 4rem 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: -4rem;
+}
+
+.cards-cursos .card {
+  margin-bottom: 2rem;
+}
+
+/* NOVOS ESTILOS */
+
+/* Título principal da página de cursos */
+header h1 {
+  font-size: 2.8rem;
+  color: #00bfff;
+  margin-top: 2rem;
+}
+
+/* Parágrafo de introdução */
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+/* Títulos das seções (h2) */
+main h2 {
+  font-size: 2rem;
+  color: #00bfff;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* contato */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #020024, #090979, #000000);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #00bfff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  backdrop-filter: blur(10px);
+}
+
+input,
+textarea {
+  width: 94%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background: linear-gradient(to right, #1e90ff, #00bfff);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0.5rem 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main h2 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* detalhes-curso */
+.detalhes-curso {
+      display: none;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #ccc;
+  }
